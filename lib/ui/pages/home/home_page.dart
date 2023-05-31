@@ -40,7 +40,35 @@ class _HomepageState extends State<Homepage> {
             SizedBox(
               width: 50,
             ),
-
+            ListView.builder(
+              scrollDirection: Axis.horizontal,
+              shrinkWrap: true,
+              itemCount: 10,
+              itemBuilder: (BuildContext context, int pos) {
+                return GestureDetector(
+                  onTap: () {
+                    onTap:
+                    () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => FoodPage(),
+                        ),
+                      );
+                    };
+                  },
+                  child: Container(
+                    height: 200,
+                    width: 200,
+                    child: Card(
+                      elevation: 0,
+                      color: Colors.deepOrange,
+                    ),
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
