@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:foody/ui/pages/splash_screen/splash_screen.dart';
 
 
+
 void main() {
   runApp(const MyApp());
 }

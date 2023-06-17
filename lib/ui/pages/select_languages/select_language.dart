@@ -32,18 +32,22 @@ class _SelectLanguageState extends State<SelectLanguage> {
               child: Column(
                 children: [
                   SizedBox(
-                    height: 100,
+                    height: 80,
                   ),
                   Center(
                       child: SizedBox(
                           height: 80, child: Image.asset(Assets.imagesLogo))),
+                  Spacer(),
                   Row(
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "Select Language",
-                          style: Theme.of(context).textTheme.titleMedium,
+                            style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w500)
                         ),
                       )
                     ],
